@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>news edit</title>
+	<script src="../ckeditor.js"></script>
+	<script src="js/sample.js"></script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description"
+		  content="Try the latest sample of CKEditor 4 and learn more about customizing your WYSIWYG editor with endless possibilities.">
+</head>
+<body id="main" bgcolor="#66FF99">
+<main>
+	<br>
+	<h1 style="text-align:center; color:#00CC66"><i>news edit center</i></h1>
+	<br><br>
+	<form action="http://localhost:2999/1.php/test/test1.php" method="post"
+		  style="position:absolute; width:60%; left:20%; text-align:center">
+		<input name="news_h" placeholder=" 输入新闻标题 "
+			   style="width:99%;text-align:center;height:50px;border:1px solid white; border-radius:2px;"><br>
+		<textarea name="news_t" id="editor">
+					<h1 style="text-align:center">edit news in here!</h1>
+
+				</textarea><br><br>
+		<input type="submit" value="提交"
+			   style=" position:relative; width:20%; height:40px; background:#00FFFF;border:1px solid white; border-radius:2px; color:#666666">
+
+	</form>
+
+
+</main>
+
+<script>
+	initSample();
+</script>
+
+</body>
+</html>
