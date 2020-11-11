@@ -12,7 +12,7 @@
     <title>showmessage</title>
 </head>
 <%! int id; %>
-<% Users users = new Users();
+<% Users users;
     UsersDao userdao = new UsersDao();
     id = (int) session.getAttribute("id");
     users = userdao.selectById(id);

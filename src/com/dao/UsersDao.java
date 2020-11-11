@@ -54,6 +54,7 @@ public class UsersDao {
         Connection connection = db.getConnection();
         //2.拼接sql语句
         String sql = "select * from users where id=" + id;
+        System.out.println(sql);
         try {
             System.out.println("准备查询....");
 
@@ -61,11 +62,19 @@ public class UsersDao {
             Statement st = connection.createStatement();//创建一个Statement对象，用于向数据库发送数据
             ResultSet rs = st.executeQuery(sql);//执行给定的sql语句,返回结果集对象
             while (rs.next()) {
-                user = new Users(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getNString(4), rs.getString(5), rs.getString(6), rs.getInt(7));
+                user = new Users(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getInt(7));
+                System.out.println(rs.getInt(2));
+                System.out.println(rs.getString(3));
+                System.out.println(rs.getString(4));
+                System.out.println(rs.getString(5));
+                System.out.println(rs.getString(6));
+                System.out.println(rs.getInt(7));
                 //执行SQL语句查找到了数据，就把数据和实体类的一个对象映射起来。
             }
 
             System.out.println("已查询！！！！");
+            System.out.println("user.getSex()");
+            System.out.println(user.getSex());
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -148,10 +157,38 @@ public class UsersDao {
     public int update(Users user) {
         int count = 0;
         Connection connection = db.getConnection();
-        String sql = "update users set name='" + user.getname() + "',password='" + user.getpassword() + "',sex='" + user.getSex() + "',hoby='" + user.gethoby() + "' " + " where id=" + user.getid();
+        String sql = "update users set password='" + user.getpassword() + "' where id=" + user.getid();
 
         try {
             System.out.println("准备更新 id 为 " + user.getid() + "的记录...");
+            System.out.println("sql");
+            System.out.println(sql);
+
+            Statement st = connection.createStatement();
+            count = st.executeUpdate(sql);
+
+            if (count != 0) {
+                System.out.print("更新成功！！！ ");
+            } else {
+                System.out.print("update error!!! ");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            db.closeConnection(connection);
+        }
+        return count;
+    }
+
+    public int updates(Users user) {
+        int count = 0;
+        Connection connection = db.getConnection();
+        String sql = "update users set name='" + user.getname() + "',sex='" + user.getSex() + "',hoby='" + user.gethoby() + "' " + " where id=" + user.getid();
+
+        try {
+            System.out.println("准备更新 id 为 " + user.getid() + "的记录...");
+            System.out.println("sql");
+            System.out.println(sql);
 
             Statement st = connection.createStatement();
             count = st.executeUpdate(sql);

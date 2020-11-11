@@ -33,6 +33,16 @@
         <servlet-name>changePassword</servlet-name>
         <url-pattern>/changePassword</url-pattern>
     </servlet-mapping>
+    <!--    修改个人信息-->
+    <servlet>
+        <servlet-name>changeMessage</servlet-name>
+        <servlet-class>servlet.changeMessage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>changeMessage</servlet-name>
+        <url-pattern>/changeMessage</url-pattern>
+    </servlet-mapping>
     <!--    添加新闻 ？？-->
     <servlet>
         <servlet-name>addnews</servlet-name>
@@ -72,6 +82,16 @@
     <servlet-mapping>
         <servlet-name>SubitmitpushNews</servlet-name>
         <url-pattern>/SubitmitpushNews</url-pattern>
+    </servlet-mapping>
+    <!--    删除x-->
+    <servlet>
+        <servlet-name>detAndPushAndChange</servlet-name>
+        <servlet-class>servlet.detAndPushAndChange</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>detAndPushAndChange</servlet-name>
+        <url-pattern>/detAndPushAndChange</url-pattern>
     </servlet-mapping>
 
 </web-app>

@@ -33,33 +33,33 @@
                 <li><a href="showmessage.jsp" target="right"
                        style="text-decoration:none; padding:8px;background-color:#99CCFF;border:2px;border-color: #000000;color:#FFFFFF">个人信息</a>
                 </li>
-                <li><a href="changePassword.jsp" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">密码修改</a></li>
+                <li><a href="changeMessage.jsp" target="right"
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">个人信息修改</a>
+                </li>
             </ul>
         </li>
         <li id='c' onClick="change('c')">用户管理
             <ul style="list-style:none;font-size:20px;" hidden='net' style="text-align:left">
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=6" target="right"
+                <li><a href="userRegister.jsp" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">账户创建</a></li>
 
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=7" target="right"
+                <li><a href="changePassword.jsp" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">密码重置</a></li>
 
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=9" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">权限修改</a></li>
             </ul>
         </li>
         <li id='b' onClick="change('b')">新闻管理
             <ul style="list-style:none;font-size:20px;" hidden='net' style="text-align:left">
                 <li><a href="/news_war_exploded/ckeditor_new/ckeditor/ckeditor.html" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">创建新闻稿</a></li>
-                <li><a href="pushnews.jsp" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">发布新闻</a></li>
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=5" target="right"
+                <li><a href="detAndPushAndChange.jsp" target="right"
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">管理新闻</a></li>
+                <li><a href="showAllNews.jsp" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">查看所有新闻</a>
                 </li>
-                <li><a href="showAllNews.jsp" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">删除新闻</a></li>
+                <li><a href="showAllofNews2.jsp" target="right"
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">查看所有发布新闻</a>
+                </li>
             </ul>
         </li>
 
@@ -67,11 +67,13 @@
         <li id='d' onClick="change('d')">系统设置
             <ul style="list-style:none;font-size:20px;" hidden='net' style="text-align:left">
                 <li><a href="https://www.csdn.net/" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">功能设置</a></li>
-                <li><a href="/"
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">查看帮助</a></li>
+                <li><a href="index.jsp"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">退出系统</a></li>
             </ul>
         </li>
+        <%--        <li id='e' onClick="change('e')"><a href="showAllofNews2.jsp">系统设置</a>--%>
+        <%--        </li>--%>
 
     </ul>
 </div>

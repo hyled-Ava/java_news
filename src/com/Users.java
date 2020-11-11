@@ -25,7 +25,17 @@ public class Users {
 //        this.ispass = ispass;
     }
 
-    public Users(int id, String name, String sex, String username, String password, String hoby, int ispass) {
+    public Users(int id, String name, String sex, String hoby) {
+//        int id,int ispass 暂时先不要
+        super();
+        this.sex = sex;
+        this.id = id;
+        this.name = name;
+        this.hoby = hoby;
+//        this.ispass = ispass;
+    }
+
+    public Users(int id, String username, String password, String hoby, String sex, String name, int ispass) {
         super();
         this.sex = sex;
         this.id = id;
