@@ -5,19 +5,28 @@ public class News {
     private int ispass;
     private String title;
     private String content;
-    private String username;
+    private int userid;
 
     public News() {
         super();
     }
 
-    public News(int id, String title, String content, String username, int ispass) {
+    public News(int id, String title, String content, int userid, int ispass) {
         super();
         this.id = id;
         this.ispass = ispass;
         this.content = content;
         this.title = title;
-        this.username = username;
+        this.userid = userid;
+    }
+
+    public News(String title, String content, int userid) {
+        super();
+        this.id = id;
+        this.ispass = ispass;
+        this.content = content;
+        this.title = title;
+        this.userid = userid;
     }
 
     public int getId() {
@@ -52,12 +61,12 @@ public class News {
         this.content = content;
     }
 
-    public String getusername() {
-        return username;
+    public int getuserid() {
+        return userid;
     }
 
-    public void setusername(String content) {
-        this.username = username;
+    public void setuserid(String content) {
+        this.userid = userid;
     }
 
     public String toString() {

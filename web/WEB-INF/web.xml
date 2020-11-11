@@ -33,5 +33,45 @@
         <servlet-name>changePassword</servlet-name>
         <url-pattern>/changePassword</url-pattern>
     </servlet-mapping>
+    <!--    添加新闻 ？？-->
+    <servlet>
+        <servlet-name>addnews</servlet-name>
+        <servlet-class>servlet.addnews</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addnews</servlet-name>
+        <url-pattern>/addnews</url-pattern>
+    </servlet-mapping>
+    <!--    发布新闻 ？？-->
+    <servlet>
+        <servlet-name>pushnew</servlet-name>
+        <servlet-class>servlet.pushnew</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pushnew</servlet-name>
+        <url-pattern>/pushnew</url-pattern>
+    </servlet-mapping>
+    <!--    查看所有新闻 ？？-->
+    <servlet>
+        <servlet-name>showAllNews</servlet-name>
+        <servlet-class>servlet.showAllNews</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showAllNews</servlet-name>
+        <url-pattern>/showAllNews</url-pattern>
+    </servlet-mapping>
+    <!--    查看所有新闻 ？？-->
+    <servlet>
+        <servlet-name>SubitmitpushNews</servlet-name>
+        <servlet-class>servlet.SubitmitpushNews</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SubitmitpushNews</servlet-name>
+        <url-pattern>/SubitmitpushNews</url-pattern>
+    </servlet-mapping>
 
 </web-app>

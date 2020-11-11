@@ -53,15 +53,13 @@
             <ul style="list-style:none;font-size:20px;" hidden='net' style="text-align:left">
                 <li><a href="/news_war_exploded/ckeditor_new/ckeditor/ckeditor.html" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">创建新闻稿</a></li>
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=4" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">管理新闻</a></li>
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=5" target="right"
+                <li><a href="pushnews.jsp" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">发布新闻</a></li>
-                <li><a href="admin.AdminDeal?user=adminaabb&thing=8" target="right"
+                <li><a href="admin.AdminDeal?user=adminaabb&thing=5" target="right"
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">查看所有新闻</a>
+                </li>
+                <li><a href="showAllNews.jsp" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">删除新闻</a></li>
-
-                <li><a id="hiden" href="admin.AdminDeal?user=adminaabb&thing=8" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">删除新闻1</a></li>
             </ul>
         </li>
 
