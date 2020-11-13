@@ -29,6 +29,27 @@ public class NewsDao {
         return news;
     }
 
+    //    搜索功能
+    public List<News> findNews(String s) {
+        List<News> news = new ArrayList<News>();
+        String sql = "select * from news where ispass=1 and title like '%" + s + "%'";
+        System.out.println(sql);
+        Connection connection = db.getConnection();
+        try {
+            PreparedStatement pst = connection.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                News ne = new News(rs.getInt(1), rs.getNString(2), rs.getNString(3), rs.getInt(4), rs.getInt(5));
+                news.add(ne);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            db.closeConnection(connection);
+        }
+        return news;
+    }
+
     public News selectById(int id) {
         News news = new News();
         Connection connection = db.getConnection();

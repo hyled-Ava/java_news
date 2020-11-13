@@ -55,10 +55,10 @@
                 <li><a href="detAndPushAndChange.jsp" target="right"
                        style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">管理新闻</a></li>
                 <li><a href="showAllNews.jsp" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">查看所有新闻</a>
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">所有新闻</a>
                 </li>
-                <li><a href="showAllofNews2.jsp" target="right"
-                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">查看所有发布新闻</a>
+                <li><a href="showAllofNews.jsp" target="right"
+                       style="text-decoration:none; padding:8px; background-color:#99CCFF; color:#FFFFFF">搜索新闻</a>
                 </li>
             </ul>
         </li>
